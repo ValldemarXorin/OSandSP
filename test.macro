@@ -1,0 +1,7 @@
+START:
+    MOV     #1000, R1
+    MOV     (R1)+, R0
+    ADD     R0, R2
+    CMP     R2, #42
+    BNE     START
+    HALT
